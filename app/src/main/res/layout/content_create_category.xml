@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.justinsimmons.passwordsafe.CreateCategory"
+    tools:showIn="@layout/activity_create_category">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/enterNewCat"
+        android:id="@+id/lblEnterNewPass"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/txtEnterNewCat"
+        android:layout_below="@+id/lblEnterNewPass"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#ffffff"
+        android:elevation="1dp"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:id="@+id/btnSubmitNewPass"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/side_nav_bar" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include User                  "
+        android:textColor="@color/colorText"
+        android:id="@+id/userSwitch"
+        android:layout_below="@+id/txtEnterNewCat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Password         "
+        android:textColor="@color/colorText"
+        android:id="@+id/passSwitch"
+        android:layout_below="@+id/userSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include Combination    "
+        android:textColor="@color/colorText"
+        android:id="@+id/comboSwitch"
+        android:layout_below="@+id/passSwitch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
