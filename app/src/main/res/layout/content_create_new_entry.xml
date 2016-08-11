@@ -91,8 +91,27 @@
         android:text="@string/submit"
         android:id="@+id/newEntrySubmit"
         android:background="@drawable/side_nav_bar"
-        android:layout_below="@+id/txtEntryPass"
+        android:layout_below="@+id/entrySelect"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="54dp" />
+        android:layout_marginTop="26dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/entrySelect"
+        android:elevation="5dp"
+        android:theme="@style/AppTheme.NoActionBar.PopupOverlay"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/lblSaveIn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Save in Category:"
+        android:id="@+id/lblSaveIn"
+        android:layout_alignTop="@+id/entrySelect"
+        android:layout_alignEnd="@+id/lblEntryName"
+        android:layout_marginEnd="25dp" />
 
 </RelativeLayout>
