@@ -8,9 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class LoginActivity extends AppCompatActivity {
-/*
-    This is a test commit
- */
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-
+        //Submits master password and opens Home activity
         Button clickButton = (Button) findViewById(R.id.btnSubmit);
         clickButton.setOnClickListener( new View.OnClickListener() {
 
