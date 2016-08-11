@@ -16,6 +16,7 @@ public class CategoriesActivity extends AppCompatActivity {
     DBHelper dbHelper;
     Cursor cursor;
     protected static String categoryTable;
+    protected static int manageCat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +43,7 @@ public class CategoriesActivity extends AppCompatActivity {
                 startActivity(newActivity);
             }
         });
-
+        
     }
 
     @Override
@@ -62,6 +63,7 @@ public class CategoriesActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.addCategory) {
+            setManageCat(0);
             Intent intent = new Intent(this, CreateCategory.class);
             startActivity(intent);
             Log.i("Test", "Selected Add Category");
@@ -69,7 +71,20 @@ public class CategoriesActivity extends AppCompatActivity {
             Intent intent = new Intent(this, CategoriesActivity.class);
             startActivity(intent);
             Log.i("Test", "Selected Settings");
+        } else if (id == R.id.removeCategory){
+            setManageCat(1);
+            Intent intent = new Intent(this, CreateCategory.class);
+            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }
+
+    public static int getManageCat() {
+        return manageCat;
+    }
+
+    public static void setManageCat(int manageCat) {
+        CategoriesActivity.manageCat = manageCat;
+    }
+
 }

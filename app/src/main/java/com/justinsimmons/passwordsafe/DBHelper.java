@@ -121,6 +121,13 @@ public class DBHelper extends SQLiteOpenHelper {
         dbs.close();
     }
 
+    public void dropTable(){
+        SQLiteDatabase dbs;
+        dbs = this.getWritableDatabase();
+        dbs.execSQL("DROP TABLE IF EXISTS " + tableName);
+        dbs.close();
+    }
+
     public String getTableName() {
         return tableName;
     }

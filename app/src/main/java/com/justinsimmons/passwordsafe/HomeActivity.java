@@ -10,9 +10,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    /*
+        specifies nav position per activity 0=Home
+        used for onBackPressed() actions
+     */
+    public static int navPosition = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +37,7 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
 
         if (!drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.openDrawer(GravityCompat.START);
@@ -74,10 +82,12 @@ public class HomeActivity extends AppCompatActivity
             Intent intent = new Intent(this, CategoriesActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_edit) {
-            Intent intent = new Intent(this, CategoriesActivity.class);
+            Intent intent = new Intent(this, CreateCategory.class);
             startActivity(intent);
         } else if (id == R.id.nav_add) {
-            Intent intent = new Intent(this, CategoriesActivity.class);
+            Intent intent = new Intent(this, CreateNewEntry.class);
+            DBHelper dbHelper = new DBHelper(getApplicationContext());
+            dbHelper.setTableName("");
             startActivity(intent);
         } else if (id == R.id.nav_manage_master) {
             Intent intent = new Intent(this, CreatePasswordActivity.class);

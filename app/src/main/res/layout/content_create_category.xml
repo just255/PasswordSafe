@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/enterNewCat"
-        android:id="@+id/lblEnterNewPass"
+        android:id="@+id/lblEnterNewCat"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
@@ -28,7 +28,7 @@
         android:inputType="text"
         android:ems="10"
         android:id="@+id/txtEnterNewCat"
-        android:layout_below="@+id/lblEnterNewPass"
+        android:layout_below="@+id/lblEnterNewCat"
         android:layout_centerHorizontal="true"
         android:backgroundTint="#ffffff"
         android:elevation="1dp"
@@ -75,5 +75,19 @@
         android:layout_below="@+id/passSwitch"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerRemoveCat"
+        android:layout_below="@+id/btnSubmitNewPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:theme="@style/AppTheme.NoActionBar.PopupOverlay"
+        android:minWidth="256dp"
+        android:background="@color/colorPrimaryAccent"
+        android:popupBackground="@color/colorPrimaryAccent"
+        android:elevation="5dp"
+        android:minHeight="30dp" />
 
 </RelativeLayout>

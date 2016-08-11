@@ -15,6 +15,7 @@
     <string name="entryName">Name</string>
     <string name="entryUser">Username</string>
     <string name="entryPass">Password</string>
+    <string name="removeCat">Remove Category</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_home">Password Safe</string>
