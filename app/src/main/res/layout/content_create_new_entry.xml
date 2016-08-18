@@ -102,7 +102,9 @@
         android:elevation="5dp"
         android:theme="@style/AppTheme.NoActionBar.PopupOverlay"
         android:layout_centerVertical="true"
-        android:layout_toEndOf="@+id/lblSaveIn" />
+        android:layout_toEndOf="@+id/lblSaveIn"
+        android:popupBackground="@color/colorPrimaryAccent"
+        android:minWidth="150dp" />
 
     <TextView
         android:layout_width="wrap_content"

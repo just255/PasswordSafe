@@ -1,7 +1,6 @@
 package com.justinsimmons.passwordsafe;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -14,7 +13,6 @@ import java.util.ArrayList;
 public class CategoriesActivity extends AppCompatActivity {
 
     DBHelper dbHelper;
-    Cursor cursor;
     protected static String categoryTable;
     protected static int manageCat;
 
@@ -46,6 +44,11 @@ public class CategoriesActivity extends AppCompatActivity {
         
     }
 
+    public void onBackPressed() {
+        //Goes back to Home Activity
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -67,14 +70,6 @@ public class CategoriesActivity extends AppCompatActivity {
             Intent intent = new Intent(this, CreateCategory.class);
             startActivity(intent);
             Log.i("Test", "Selected Add Category");
-        } else if (id == R.id.action_settings) {
-            Intent intent = new Intent(this, CategoriesActivity.class);
-            startActivity(intent);
-            Log.i("Test", "Selected Settings");
-        } else if (id == R.id.removeCategory){
-            setManageCat(1);
-            Intent intent = new Intent(this, CreateCategory.class);
-            startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
     }

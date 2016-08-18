@@ -80,14 +80,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/spinnerRemoveCat"
-        android:layout_below="@+id/btnSubmitNewPass"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="91dp"
+        android:layout_marginTop="15dp"
         android:theme="@style/AppTheme.NoActionBar.PopupOverlay"
         android:minWidth="256dp"
         android:background="@color/colorPrimaryAccent"
         android:popupBackground="@color/colorPrimaryAccent"
         android:elevation="5dp"
-        android:minHeight="30dp" />
+        android:minHeight="30dp"
+        android:layout_below="@+id/lblDeleteCategory"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/removeCat"
+        android:id="@+id/lblDeleteCategory"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/btnSubmitNewPass"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/removeCat"
+        android:id="@+id/btnRemoveCat"
+        android:background="@drawable/side_nav_bar"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_below="@+id/spinnerRemoveCat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
 
 </RelativeLayout>

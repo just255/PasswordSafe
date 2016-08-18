@@ -18,7 +18,6 @@ public class CreateCategory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_category);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -39,13 +38,14 @@ public class CreateCategory extends AppCompatActivity {
 
                 String table;
                 EditText category = (EditText)(findViewById(R.id.txtEnterNewCat));
-
-                table = category.getText().toString();
-
-                helper.createDynamicTables(table);
-
-                Intent intent = new Intent(getApplicationContext(), CategoriesActivity.class);
-                startActivity(intent);
+                if(category.getText().toString().trim().length() > 0) {
+                    table = category.getText().toString();
+                    helper.createDynamicTables(table);
+                    Intent intent = new Intent(getApplicationContext(), CategoriesActivity.class);
+                    startActivity(intent);
+                }else {
+                    Toast.makeText(getApplicationContext(), "Please enter a category to create.", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -62,6 +62,19 @@ public class CreateCategory extends AppCompatActivity {
             }
         });
 
+        Button remove = (Button) findViewById(R.id.btnRemoveCat);
+        remove.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View arg0) {
+                SQLiteDatabase db;
+                db = helper.getWritableDatabase();
+
+                //Drops table if it exists and goes back to Category Activity
+                helper.dropTable();
+
+                Intent intent = new Intent(getApplicationContext(), CategoriesActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
