@@ -23,7 +23,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_activity_login">Login</string>
-    <string name="title_activity_create_category">New Category</string>
+    <string name="title_activity_create_category">Manage Categories</string>
     <string name="title_activity_display_table_items">Entry Names</string>
     <string name="title_activity_create_new_entry">New Entry</string>
     <string name="title_activity_display_item_content">Entry Details</string>

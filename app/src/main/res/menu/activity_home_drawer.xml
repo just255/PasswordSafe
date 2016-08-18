@@ -5,7 +5,7 @@
         <item
             android:id="@+id/nav_view"
             android:icon="@drawable/ic_menu_view_entries"
-            android:title="View Entries" />
+            android:title="View Categories" />
         <item
             android:id="@+id/nav_edit"
             android:icon="@drawable/ic_menu_edit_categories"

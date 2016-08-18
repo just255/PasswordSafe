@@ -47,6 +47,7 @@ public class HomeActivity extends AppCompatActivity
     }
 
 
+
     @Override
     public void onBackPressed() {
         //Closes drawer if open and closes program if drawer is closed
