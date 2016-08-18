@@ -24,7 +24,7 @@ public class CategoriesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categories);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-Log.i("test", "this is a test");
+        
         dbHelper = new DBHelper(this);
         final ArrayList<String> stringArray = dbHelper.getAllTables();
 
