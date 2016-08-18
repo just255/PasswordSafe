@@ -22,7 +22,7 @@ public class CategoriesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_categories);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+        
         dbHelper = new DBHelper(this);
         final ArrayList<String> stringArray = dbHelper.getAllTables();
 
