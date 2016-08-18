@@ -5,11 +5,7 @@
         <item
             android:id="@+id/nav_view"
             android:icon="@drawable/ic_menu_view_entries"
-<<<<<<< HEAD
-            android:title="View Categories" />
-=======
             android:title="@string/veiwCategory" />
->>>>>>> refs/remotes/origin/master
         <item
             android:id="@+id/nav_edit"
             android:icon="@drawable/ic_menu_edit_categories"
