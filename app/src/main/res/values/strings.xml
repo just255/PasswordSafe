@@ -10,12 +10,16 @@
     <string name="title_create_master">Create Master Password</string>
     <string name="title_activity_create_entry">New Entry</string>
     <string name="action_create_category">New Category</string>
-    <string name="username">Justin</string>
+    <string name="username">User</string>
     <string name="enterNewCat">Enter New Category</string>
     <string name="entryName">Name</string>
     <string name="entryUser">Username</string>
     <string name="entryPass">Password</string>
     <string name="removeCat">Remove Category</string>
+    <string name="veiwCategory">Veiw Categories</string>
+    <string name="editCategories">Edit Categories</string>
+    <string name="createNewEntry">Create New Entry</string>
+    <string name="manageMasterPassword">Manage Master Password</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="title_activity_home">Password Safe</string>
