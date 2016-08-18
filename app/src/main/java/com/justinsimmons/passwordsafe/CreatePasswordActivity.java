@@ -23,7 +23,7 @@ public class CreatePasswordActivity extends AppCompatActivity {
             // Locate the button
             button = (Button) findViewById(R.id.btnSubmitNewPass);
 
-            // Capture button clicks
+            // Submits password and opens activity
             button.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View arg0) {
 
