@@ -46,8 +46,11 @@ public class HomeActivity extends AppCompatActivity
         }
     }
 
+
+
     @Override
     public void onBackPressed() {
+        //Closes drawer if open and closes program if drawer is closed
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
@@ -79,21 +82,27 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_view) {
+            //Opens category activity
             Intent intent = new Intent(this, CategoriesActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_edit) {
+            //Opens create category
             Intent intent = new Intent(this, CreateCategory.class);
             startActivity(intent);
         } else if (id == R.id.nav_add) {
+            //Sets table name to nothing so user can select which table to add entry to
+            //Opens create new entry
             Intent intent = new Intent(this, CreateNewEntry.class);
             DBHelper dbHelper = new DBHelper(getApplicationContext());
             dbHelper.setTableName("");
             startActivity(intent);
         } else if (id == R.id.nav_manage_master) {
+            //Opens manage master password
             Intent intent = new Intent(this, CreatePasswordActivity.class);
             startActivity(intent);
         }
 
+        //Closes the drawer after a selection is made
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
