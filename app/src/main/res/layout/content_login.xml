@@ -50,4 +50,18 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp" />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google login"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:backgroundTint="#ab933c">
+ </com.google.android.gms.common.SignInButton>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>
