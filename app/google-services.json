@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "250077197885",
-    "project_id": "passwordsafe-141106"
+    "project_number": "1033811938596",
+    "project_id": "firebase-password-safe"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:250077197885:android:fd2f77433b54a88e",
+        "mobilesdk_app_id": "1:1033811938596:android:fd2f77433b54a88e",
         "android_client_info": {
           "package_name": "com.justinsimmons.passwordsafe"
         }
       },
       "oauth_client": [
         {
-          "client_id": "250077197885-anogh4fimlfl12rjmlqke8j6chlcn1kh.apps.googleusercontent.com",
+          "client_id": "1033811938596-1hl8oiqacuqsb4gcgha0nnuv3mss2ijp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.justinsimmons.passwordsafe",
-            "certificate_hash": "1DAFEE1BD70F5F713E0783726F70CCDC18E8EDDD"
+            "certificate_hash": "B42D9EB9D9EAEA27F2D5D9E9D71F96B4CD3898A2"
           }
         },
         {
-          "client_id": "250077197885-poridi46emh78q5sfv3ifc87fvocglv4.apps.googleusercontent.com",
+          "client_id": "1033811938596-tihfemunapjujksha5u6bubbmbnf1ekj.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAP70yURH0IEUYoj_dxWJpkh0TZgmzOLO0"
+          "current_key": "AIzaSyC-ERhDgIBHIDCG9mAVD_tT5M0fC2eECNk"
         }
       ],
       "services": {
