@@ -51,17 +51,23 @@
             android:layout_marginTop="15dp" />
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/login"
+        android:id="@+id/google_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Google login"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btnSubmit"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="66dp"
-        android:backgroundTint="#ab933c">
- </com.google.android.gms.common.SignInButton>
-    <TextView
-        android:id="@+id/name"
+        android:layout_marginTop="39dp" />
+
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:singleLine="false"
+        android:elevation="5dp"
+        android:background="@drawable/side_nav_bar"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/google_login"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/google_logout" />
+
 </RelativeLayout>
